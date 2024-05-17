@@ -1,21 +1,27 @@
 body {
-  background: radial-gradient(circle, rgba(0,0,0,0.028124999999999956) 0%, rgba(253,187,45,1) 100%);
   font-family: "Roboto", sans-serif;
+  ;
+  background-color: rgb(0, 0, 0);
+  background: radial-gradient(#0f0f0f, #9198e5);
   text-align: center;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 #header {
   margin: 5px;
   font-size: 20px;
-  text-align: center;
+  align-items: center;
+}
+
+h2 {
+  color: #fff;
 }
 
 #todo-container {
-  background: rgb(41, 33, 33);
+  background-color: rgb(41, 33, 33);
   width: 500px;
   margin: 0 auto;
-  border:2px solid #0033ff;
+  border: 2px solid #2e60ea;
   padding: 20px;
   color: #fff;
   border-radius: 15px;
@@ -54,10 +60,43 @@ ul {
 
 li {
   border: 1px solid #fff;
-  border-radius:  5px;
+  border-radius: 5px;
+  margin: 10px 0;
   padding: 10px;
-  /* margin: 10px 0 10px 0; */
-  /* margin-bottom: 10px;
-  /* margin: 10px 0; */
-  margin-top: 10px;
+
+}
+
+.edit-btn {
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e60ea;
+
+}
+
+
+.delete-btn {
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e60ea;
+
+}
+
+.edit-btn:hover {
+  background-color: #9eb7fd;
+}
+
+.delete-btn:hover {
+  background-color: #9eb7fd;
+}
+
+.tasks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
