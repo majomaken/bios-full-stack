@@ -14,14 +14,14 @@
 // const day = 24
 // let eatTimes = 0
 
-// for(let i = 0; i <= day; i++) {
-//   myCat.hungry = myCat.hungry - 1
-//   // console.log('Valor del hambre de mi gato',myCat.hungry)
-//   if (myCat.hungry === 0) {
-//     eatTimes = eatTimes + 1
-//     console.log(myCat.eat(i));
-//   }
-// }
+for(let i = 0; i <= day; i++) {
+  myCat.hungry = myCat.hungry - 1
+  console.log('Valor del hambre de mi gato',myCat.hungry)
+  if (myCat.hungry === 0) {
+    eatTimes = eatTimes + 1
+    console.log(myCat.eat(i));
+  }
+}
 
 function cat(name, color, numberOfEyes, hasHair, genre, hungry) {
   this.name = name
