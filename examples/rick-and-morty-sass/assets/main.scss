@@ -1,0 +1,90 @@
+@import './_colors.scss';
+@import './responsive.scss';
+@import './ui/ui-box-mixin.scss';
+@import './ui/ui-card-mixin.scss';
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: $margin-default;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
+    "footer";
+
+  .box {
+    @include box;
+  }
+
+  .card {
+    @include card;
+    @include box(red);
+
+    &:hover {
+      .detail {
+        display: block;
+      }
+    }
+  }
+
+  .header {
+    background-color: #999;
+    grid-area: header;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .sidebar2 {
+    grid-area: sidebar2;
+    background-color: #ccc;
+    color: #444;
+  }
+  
+  .content {
+    grid-area: content;
+    .wrapper-characters {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+
+      @include desktop {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #999;
+  }
+
+  @include iPad {
+    grid-template-columns: 20% auto;
+    grid-template-areas: 
+      "header    header"
+      "sidebar   content"
+      "sidebar2  sidebar2"
+      "footer    footer";
+  }
+
+  @include desktop {
+    grid-gap: 25px;
+    grid-template-columns: 120px auto 120px;
+    grid-template-areas:
+      "header    header    header"
+      "sidebar   content   sidebar2"
+      "footer    footer    footer";
+    
+      width: 100%;
+  }
+}

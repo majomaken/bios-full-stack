@@ -1,0 +1,11 @@
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+    .detail {
+      display: none;
+      color: #000;
+    }
+  }
