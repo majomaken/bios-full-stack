@@ -10,7 +10,7 @@ body {
 }
 .wrapper .box {
   background-color: #444;
-  color: #ffffff;
+  color: #fff;
   border-radius: 5px;
   padding: 20px;
   font-size: 25px;
@@ -21,21 +21,18 @@ body {
   text-align: center;
   border: 1px solid #fff;
   cursor: pointer;
-  background-color: rgb(56, 18, 126);
-  color: #ffffff;
+  background-color: red;
+  color: #fff;
   border-radius: 5px;
   padding: 20px;
   font-size: 25px;
 }
 .wrapper .card .detail {
-  visibility: hidden;
+  display: none;
   color: #000;
 }
 .wrapper .card:hover .detail {
-  visibility: visible;
-}
-.wrapper .card .char-name {
-  margin-top: 20px;
+  display: block;
 }
 .wrapper .header {
   background-color: #999;
