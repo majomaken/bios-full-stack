@@ -24,12 +24,16 @@ body {
 
   .card {
     @include card;
-    @include box(red);
+    @include box(rgb(56, 18, 126));
 
     &:hover {
       .detail {
-        display: block;
+        visibility: visible;
       }
+    }
+
+    .char-name {
+      margin-top: 20px;
     }
   }
 
