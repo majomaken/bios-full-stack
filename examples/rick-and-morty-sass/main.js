@@ -13,7 +13,7 @@ const fetchRickAndMortyApi = async () => {
       div.innerHTML = `
         <div class="card">
           <img src="${character.image}" alt="Carta del personaje ${character.name}">
-          <span>${character.name}</span>
+          <span class="char-name">${character.name}</span>
           <div class="detail">
             <span>Aparece en ${character.episode.length} episodios</span>
           </div>

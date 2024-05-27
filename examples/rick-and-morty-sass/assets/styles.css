@@ -28,11 +28,14 @@ body {
   font-size: 25px;
 }
 .wrapper .card .detail {
-  display: none;
+  visibility: hidden;
   color: #000;
 }
+.wrapper .card .char-name {
+  margin-top: 20px;
+}
 .wrapper .card:hover .detail {
-  display: block;
+  visibility: visible;
 }
 .wrapper .header {
   background-color: #999;
