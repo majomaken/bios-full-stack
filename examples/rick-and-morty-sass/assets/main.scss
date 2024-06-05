@@ -23,8 +23,13 @@ body {
   }
 
   .card {
+    position: relative;
     @include card;
     @include box(red);
+
+    .char-name {
+      margin-top: 20px;
+    }
 
     &:hover {
       .detail {

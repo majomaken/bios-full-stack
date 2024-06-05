@@ -16,6 +16,7 @@ body {
   font-size: 25px;
 }
 .wrapper .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -28,8 +29,20 @@ body {
   font-size: 25px;
 }
 .wrapper .card .detail {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
-  color: #000;
+  color: #fff;
+  background-color: red;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.wrapper .card .char-name {
+  margin-top: 20px;
 }
 .wrapper .card:hover .detail {
   display: block;
